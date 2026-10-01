@@ -57,3 +57,46 @@ int main()
 // int 2age;         // ❌
 // int user age;     // ❌
 // int user-age;     // ❌
+
+// #Primitive Data Types
+
+// C++ mein **Data Type** batata hai ki variable mein kis type ka data store hoga aur us data ko memory mein kitni space chahiye.
+
+// ## Primitive / Fundamental Data Types
+
+// ### 1. bool
+// `bool` ka use **True/False** value store karne ke liye hota hai.
+// bool isPassed = true;
+// bool isLoggedIn = false;
+// * Size: **1 byte** (commonly)
+// * Values: `true` / `false`
+// * Use: Conditions, flags, yes/no type values
+
+// ### 2. char
+// `char` ka use **single character** store karne ke liye hota hai.
+// char grade = 'A';
+// char gender = 'M';
+// * Size: **1 byte**
+// * Common range: `-128 to 127` when `char` is signed
+// * `unsigned char`: `0 to 255`
+// * Character ko single quotes `' '` mein likhte hain.
+
+// ### 3. short
+// `short` ka use **small integer values** store karne ke liye hota hai.
+// short age = 28;
+// * Size: **2 bytes** (commonly)
+// * Range: `-32,768 to 32,767`
+
+// ### 4. int
+// `int` ka use **normal whole/integer numbers** store karne ke liye hota hai.
+// int age = 28;
+// int marks = 95;
+// * Size: **4 bytes** (commonly)
+// * Range: `-2,147,483,648 to 2,147,483,647`
+// * DSA mein `int` sabse commonly used data types mein se ek hai.
+
+// ### 5. long
+// `long` ka use **integer values** store karne ke liye hota hai.
+// long population = 1000000;
+// * Windows par commonly: **4 bytes**
+// * Range: `-2,147,483,648 to 2,147,483,647`
