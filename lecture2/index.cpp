@@ -39,3 +39,21 @@ int main()
 // {
 //     return 0;
 // }
+
+// variable in c++
+
+// 1. Name letter ya underscore (_) se start hona chahiye.
+// 2. Number se start nahi kar sakte.
+// 3. Spaces allowed nahi hain.
+// 4. Special characters generally allowed nahi hain.
+// 5. C++ keywords ko variable name nahi bana sakte.
+// 6. C++ case-sensitive hai.
+
+// int age;          // ✅
+// int userAge;      // ✅
+// int user_age;     // ✅
+// int age2;         // ✅
+// int _age;         // ✅
+// int 2age;         // ❌
+// int user age;     // ❌
+// int user-age;     // ❌
