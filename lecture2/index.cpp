@@ -15,7 +15,27 @@ int main()
     return 0;
 }
 
-// #include <iostream>: package that allows us to use input and output streams, such as cout for printing to the console.
-// using namespace std: allows us to use names from the standard library without prefixing them with std::, making the code cleaner and easier to read.
-// cout: an object of the ostream class used to output data to the standard output stream (console).
-// endl: manipulator that inserts a newline character and flushes the output buffer, ensuring that all output is displayed immediately.
+// #include <iostream>: Ye C++ ki standard library ki header file hai,
+// jo input aur output ke liye use hoti hai.
+// Iski help se hum cout aur cin jaise features use kar sakte hain.
+
+// using namespace std: Isse hum standard library ke members ko
+// std:: likhe bina directly use kar sakte hain.
+// Jaise std::cout ki jagah sirf cout likh sakte hain.
+
+// cout: Console/screen par output print karne ke liye use hota hai.
+
+// endl: Output ko next line mein le jata hai aur output buffer ko flush karta hai.
+
+// Boiler Plate Code: Ye C++ program ka basic structure hai.
+// main() function program ka entry point hota hai.
+// Program ki execution main() se start hoti hai.
+// Yahan pehle "Hello, World!" print hota hai,
+// phir nextLine() function call hota hai,
+// jo do additional lines print karta hai.
+// return 0; batata hai ki program successfully execute hua.
+
+// int main()
+// {
+//     return 0;
+// }
