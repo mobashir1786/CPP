@@ -82,6 +82,39 @@ string checkCharacter(char ch)
     }
 }
 
+// print Number using while loop
+void printNumbersUsingWhile(int n)
+{
+    int i = 1;
+    while (i <= n)
+    {
+        cout << i << " ";
+        i++;
+    }
+    cout << endl;
+}
+
+// print numbers using for loop
+void printNumbersUsingFor(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        cout << i << " ";
+    }
+    cout << endl;
+}
+
+// print sum of 1 to n numbers
+int printSum(int n)
+{
+    int sum = 0;
+    for (int i = 1; i <= n; i++)
+    {
+        sum += i;
+    }
+    return sum;
+}
+
 int main()
 {
     // cout << positiveOrNegative(5) << endl;
@@ -89,5 +122,8 @@ int main()
     // cout << evenOrOdd(4) << endl;
     // cout << checkGrade(18) << endl;
     // cout << checkCharacter('B') << endl;
+    // printNumbersUsingWhile(5);
+    // printNumbersUsingFor(5);
+    // cout << printSum(10) << endl;
     return 0;
 }
