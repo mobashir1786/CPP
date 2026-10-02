@@ -175,6 +175,31 @@ void printPattern(int m, int n)
     }
 }
 
+// print sum n number which is divisible by 3 and 5
+int sumOfNumbersDivisibleBy3And5(int n)
+{
+    int sum = 0;
+    for (int i = 1; i <= n; i++)
+    {
+        if (i % 3 == 0 && i % 5 == 0)
+        {
+            sum += i;
+        }
+    }
+    return sum;
+}
+
+// print factorial of n
+int factorial(int n)
+{
+    int fact = 1;
+    for (int i = 1; i <= n; i++)
+    {
+        fact *= i;
+    }
+    return fact;
+}
+
 int main()
 {
     // cout << positiveOrNegative(5) << endl;
@@ -189,5 +214,7 @@ int main()
     // cout << sumOfEvenNumbers(10) << endl;
     // isPrime(9) ? cout << "Prime" : cout << "Not Prime" << endl;
     // printPattern(5, 5);
+    // cout << sumOfNumbersDivisibleBy3And5(15) << endl;
+    // cout << factorial(5) << endl;
     return 0;
 }
