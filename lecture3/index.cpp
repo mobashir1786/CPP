@@ -115,6 +115,66 @@ int printSum(int n)
     return sum;
 }
 
+// sum of odd numbers from 1 to n using while loop
+int sumOfOddNumbers(int n)
+{
+    int sum = 0;
+    int i = 1;
+    while (i <= n)
+    {
+        if (i % 2 != 0)
+        {
+            sum += i;
+        }
+        i++;
+    }
+    return sum;
+}
+
+// sum of even numbers from 1 to n using for loop
+int sumOfEvenNumbers(int n)
+{
+    int sum = 0;
+    for (int i = 1; i <= n; i++)
+    {
+        if (i % 2 == 0)
+        {
+            sum += i;
+        }
+    }
+    return sum;
+}
+
+// check if a number is prime or not
+bool isPrime(int n)
+{
+    if (n <= 1)
+    {
+        return false;
+    }
+    for (int i = 2; i <= n / 2; i++) // because a number is not prime if it has a divisor other than 1 and itself, we only need to check up to n/2, its optimized to check up to sqrt(n) but for simplicity we are checking up to n/2
+    {
+        if (n % i == 0)
+        {
+            return false;
+        }
+    }
+    return true;
+}
+
+// print m and n * using nested for loop
+void printPattern(int m, int n)
+{
+    for (int i = 1; i <= m; i++)
+    {
+        for (int j = 1; j <= n; j++)
+        {
+            cout << "* ";
+        }
+        cout << endl;
+    }
+}
+
 int main()
 {
     // cout << positiveOrNegative(5) << endl;
@@ -125,5 +185,9 @@ int main()
     // printNumbersUsingWhile(5);
     // printNumbersUsingFor(5);
     // cout << printSum(10) << endl;
+    // cout << sumOfOddNumbers(10) << endl;
+    // cout << sumOfEvenNumbers(10) << endl;
+    // isPrime(9) ? cout << "Prime" : cout << "Not Prime" << endl;
+    // printPattern(5, 5);
     return 0;
 }
